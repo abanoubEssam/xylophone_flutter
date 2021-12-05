@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 import './sound_btn.dart';
 
 class Xylophone extends StatelessWidget {
   const Xylophone({Key? key}) : super(key: key);
-  void playSound(int noteNum) {
-    var player = AudioCache();
-    player.play('note$noteNum.wav');
-  }
 
   @override
   Widget build(BuildContext context) {
